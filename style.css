@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 40px;
+  color: #2e7d32;
+}
+
+header p {
+  color: gray;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h2 {
+  font-size: 45px;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+/* PROGRESS */
+.progress-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: #2ecc71;
+  transition: 0.5s;
+}
+
+/* BUTTONS */
+.actions {
+  text-align: center;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #2ecc71;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+}

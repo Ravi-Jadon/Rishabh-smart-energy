@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Home Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌱 Green Home</h1>
+    <p>Your sustainability dashboard</p>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats">
+
+    <div class="card">
+      <p>Energy Saved</p>
+      <h2 id="energy">0</h2>
+      <span>kWh</span>
+    </div>
+
+    <div class="card">
+      <p>Water Saved</p>
+      <h2 id="water">0</h2>
+      <span>Liters</span>
+    </div>
+
+    <div class="card">
+      <p>CO₂ Reduced</p>
+      <h2 id="co2">0</h2>
+      <span>kg</span>
+    </div>
+
+  </section>
+
+  <!-- PROGRESS -->
+  <section class="progress-section">
+    <h3>Weekly Progress</h3>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+  </section>
+
+  <!-- ACTION BUTTONS -->
+  <section class="actions">
+    <button onclick="addEnergy()">⚡ Save Energy</button>
+    <button onclick="addWater()">💧 Save Water</button>
+    <button onclick="addCO2()">🌍 Reduce CO₂</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
